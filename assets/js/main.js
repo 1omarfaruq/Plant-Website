@@ -13,13 +13,15 @@ const hamBurger = document.getElementById("hamburger");
 
 // End Toggle Button
 hamBurger.addEventListener ("click", () => {
-    navMenu.classList.toggle("left-[0]");
+    navMenu.classList.toggle("left-[-100%]");
+    navMenu.classList.toggle("left-0");
     hamBurger.classList.toggle("ri-close-large-line");
 });
 
 navLinks.forEach (link => {
     link.addEventListener("click", () => {
-        navMenu.classList.toggle("left-[0]");
+        navMenu.classList.toggle("left-[-100%]");
+        navMenu.classList.toggle("left-0");
         hamBurger.classList.toggle("ri-close-large-line");
     });
 });
