@@ -49,6 +49,9 @@
     .btn_outline:hover {
         @apply bg-yellow-500;
     }
+    .popular_card:hover img {
+        @apply -top-8;
+    }
 }
 
 @layer utilities {
