@@ -797,24 +797,28 @@ section{
   margin-right: auto;
 }
 
-.mb-10{
-  margin-bottom: 2.5rem;
-}
-
 .mb-40{
   margin-bottom: 10rem;
-}
-
-.mt-2{
-  margin-top: 0.5rem;
 }
 
 .mb-7{
   margin-bottom: 1.75rem;
 }
 
-.mb-32{
-  margin-bottom: 8rem;
+.ml-2{
+  margin-left: 0.5rem;
+}
+
+.ml-auto{
+  margin-left: auto;
+}
+
+.mt-2{
+  margin-top: 0.5rem;
+}
+
+.mr-5{
+  margin-right: 1.25rem;
 }
 
 .flex{
@@ -829,6 +833,10 @@ section{
   display: none;
 }
 
+.h-12{
+  height: 3rem;
+}
+
 .h-16{
   height: 4rem;
 }
@@ -839,6 +847,10 @@ section{
 
 .min-h-\[80vh\]{
   min-height: 80vh;
+}
+
+.w-12{
+  width: 3rem;
 }
 
 .w-32{
@@ -932,6 +944,10 @@ section{
 
 .grid-cols-1{
   grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
+.grid-rows-1{
+  grid-template-rows: repeat(1, minmax(0, 1fr));
 }
 
 .flex-col{
@@ -1067,6 +1083,10 @@ section{
   padding: 1.25rem;
 }
 
+.p-6{
+  padding: 1.5rem;
+}
+
 .px-2{
   padding-left: 0.5rem;
   padding-right: 0.5rem;
@@ -1075,6 +1095,11 @@ section{
 .py-1{
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
+}
+
+.py-12{
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }
 
 .py-20{
@@ -1099,6 +1124,11 @@ section{
   line-height: 2.25rem;
 }
 
+.text-4xl{
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
 .text-6xl{
   font-size: 3.75rem;
   line-height: 1;
@@ -1121,6 +1151,10 @@ section{
 
 .font-bold{
   font-weight: 700;
+}
+
+.uppercase{
+  text-transform: uppercase;
 }
 
 .italic{
@@ -1258,20 +1292,8 @@ section{
 }
 
 @media (min-width: 540px){
-  .md\:mb-20{
-    margin-bottom: 5rem;
-  }
-
-  .md\:mb-28{
-    margin-bottom: 7rem;
-  }
-
   .md\:mb-12{
     margin-bottom: 3rem;
-  }
-
-  .md\:mb-36{
-    margin-bottom: 9rem;
   }
 
   .md\:w-52{
@@ -1325,10 +1347,6 @@ section{
 
   .lg\:w-full{
     width: 100%;
-  }
-
-  .lg\:grid-cols-4{
-    grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 
   .lg\:flex-row{
