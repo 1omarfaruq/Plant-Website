@@ -716,6 +716,10 @@ section{
   top: -2rem;
 }
 
+.pointer-events-none{
+  pointer-events: none;
+}
+
 .fixed{
   position: fixed;
 }
@@ -831,6 +835,18 @@ section{
 
 .mt-16{
   margin-top: 4rem;
+}
+
+.mb-5{
+  margin-bottom: 1.25rem;
+}
+
+.mt-10{
+  margin-top: 2.5rem;
+}
+
+.inline-block{
+  display: inline-block;
 }
 
 .flex{
@@ -1222,6 +1238,11 @@ section{
   line-height: 2rem;
 }
 
+.text-7xl{
+  font-size: 4.5rem;
+  line-height: 1;
+}
+
 .font-bold{
   font-weight: 700;
 }
@@ -1273,6 +1294,11 @@ section{
   color: rgb(234 179 8 / var(--tw-text-opacity, 1));
 }
 
+.text-green-700{
+  --tw-text-opacity: 1;
+  color: rgb(21 128 61 / var(--tw-text-opacity, 1));
+}
+
 .opacity-30{
   opacity: 0.3;
 }
@@ -1287,6 +1313,14 @@ section{
 
 .opacity-90{
   opacity: 0.9;
+}
+
+.opacity-0{
+  opacity: 0;
+}
+
+.opacity-20{
+  opacity: 0.2;
 }
 
 .outline-none{
@@ -1412,6 +1446,10 @@ section{
     padding-top: 7rem;
   }
 
+  .md\:text-start{
+    text-align: start;
+  }
+
   .md\:text-4xl{
     font-size: 2.25rem;
     line-height: 2.5rem;
@@ -1455,6 +1493,10 @@ section{
 
   .lg\:w-full{
     width: 100%;
+  }
+
+  .lg\:grid-cols-3{
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
   .lg\:flex-row{
