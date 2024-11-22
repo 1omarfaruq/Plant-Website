@@ -6,11 +6,6 @@ const navMenu = document.getElementById("nav-menu");
 const navLinks = document.querySelectorAll(".nav-link");
 const hamBurger = document.getElementById("hamburger");
 
-// console.log('ok 11');
-// console.log(navMenu);
-// console.log(navLinks);
-// console.log(hamBurger);
-
 // End Toggle Button
 hamBurger.addEventListener ("click", () => {
     navMenu.classList.toggle("left-[-100%]");
@@ -29,6 +24,21 @@ navLinks.forEach (link => {
 /**
  * Begain Show Scroll Up
  */
+const scrollUp = () => {
+  console.log('ssss');
+  const scrollUpBtn = document.getElementById("scroll-up");
+   
+  if (this.scrollY >= 250) {
+    scrollUpBtn.classList.remove("-bottom-1/2");
+    scrollUpBtn.classList.add("bottom-4");
+  } else {
+    scrollUpBtn.classList.add("-bottom-1/2");
+    scrollUpBtn.classList.remove("bottom-4");
+  }
+}
+
+window.addEventListener('scroll', scrollUp);
+
 // End Show Scroll Up
 
 
