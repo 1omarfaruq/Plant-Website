@@ -34,6 +34,11 @@
         @apply text-yellow-500;
     }
 
+    /* Active */
+    .active {
+        @apply text-yellow-500;
+    }
+
     .btn {
         @apply border border-yellow-500 bg-yellow-500 rounded-md px-5 py-2 duration-300;
     }
