@@ -130,6 +130,23 @@ window.addEventListener('scroll', activeLink);
 /**
  * Begain Scroll Revail Animation
  */
+const sr = ScrollReveal({
+  origin: "top",
+  distance: "60px",
+  duration: 2500,
+  delay: 300,
+  reset: true
+});
+
+sr.reveal(`.home__data, .about__top, .populer__top, .review__top, .review__swiper, .footer__icon, .footer__content, .footer__right`);
+sr.reveal(`.home__image`, { delay: 500, scale: 0.5 });
+sr.reveal(`.service__card, .popular_card`, { interval: 300 });
+
+sr.reveal(`.about__leaf`, { delay:1000, origin: "right" });
+sr.reveal(`.about_item_1-img, .about_item_2-content`, { origin: "left" });
+sr.reveal(`.about_item_2-img, .about_item_1-content`, { origin: "right" });
+
+sr.reveal(`.review__leaf, .footer__floral`, { delay:1000, origin: "left" });
 // End Scroll Revail Animation
 
 
