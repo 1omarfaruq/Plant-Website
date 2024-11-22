@@ -25,7 +25,6 @@ navLinks.forEach (link => {
  * Begain Show Scroll Up
  */
 const scrollUp = () => {
-  console.log('ssss');
   const scrollUpBtn = document.getElementById("scroll-up");
    
   if (this.scrollY >= 250) {
@@ -47,6 +46,17 @@ window.addEventListener('scroll', scrollUp);
 /**
  * Begain Change Background Header
  */
+const scrollHeader = () => {
+  const header = document.getElementById("navbar");
+   console.log('okk');
+  if (this.scrollY >= 50) {
+    header.classList.add("border-b","border-yellow-500","shadow-md","shadow-yellow-500");
+  } else {
+    header.classList.remove("border-b","border-yellow-500","shadow-md","shadow-yellow-500");
+  }
+}
+
+window.addEventListener('scroll', scrollHeader);
 // End Change Background Header
 
 
